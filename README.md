@@ -1,40 +1,34 @@
 # sprw.github.io
 
-白色背景、自然分节、少量棕色链接与简洁文字排版的中英文个人主页。纯静态网站，无需安装依赖，可直接打开 `index.html`。
+一个轻量的双语个人主页。白底、细边框、紧凑简介，个人感想使用独立的博客视图。
 
-## 页面结构
+- 简介：左侧个人资料，右侧双列教育、实习、项目、论文和兴趣信息框。
+- 个人感想：风景横幅、文章卡片、分类筛选、展开阅读。
+- 顶部仅有“简介 / 个人感想”，右上角中英文切换，支持语言偏好保存。
+- 无框架、无外部运行依赖；支持手机、键盘操作、减少动画偏好及 A4 打印。
 
-个人联系方式 → 教育经历 → 实习经历 → 项目经历 → 论文发表 → 兴趣方向 → 个人感想。
+## 编辑内容
 
-支持顶部文字目录、章节跳转与高亮、移动端自动换行目录、右上角中英文切换、语言偏好保存、返回顶部、键盘导航和减少动画偏好。
+直接编辑 `index.html`。每段中文放在 `.zh` 元素中，英文放在 `.en` 元素中，无需另外维护翻译字典。
 
-## 修改内容
+个人经历、邮箱、照片与论文尚为占位，替换时请填写真实资料。博客中两篇条目标记为“模板 · 待发布”，不要将其视作本人已发表文章。新增文章可复制 `.post-card`，设置 `data-category="learning"` 或 `data-category="life"`，并修改中英文标题、摘要和正文。
 
-- 中文：编辑 `index.html` 中的正文。
-- 英文：编辑 `index.html` 底部的 `en` 字典，键与 `data-i18n` 对应。
-- 邮箱：将占位内容替换为真实邮箱，并把外层 `<div class="contact">` 改为 `<a class="contact" href="mailto:你的邮箱">`，对应修改闭合标签。
-- 经历与论文：当前标记为“待补充”，请替换为真实信息。新增条目可复制相应的 `article`。中英文同时添加对应字典键。
-- 项目、论文链接：填写真实 URL，不使用 `href="#"` 伪链接；本地资源使用 `./assets/...` 相对路径。
-- 配色：修改 CSS 开头的 `:root` 变量。字体使用 系统字体：英文 Times New Roman，中文正文宋体（Songti SC / SimSun），标题楷体（Kaiti SC / KaiTi），缺失时回退至衬线字体。
+照片可以将 `.portrait` 占位替换为 `<img>`，使用本地 `./assets/` 路径。新增资源时，请同步修改 `.github/workflows/pages.yml` 的复制步骤；现有工作流仅复制 `assets/favicon.svg`。
 
-## GitHub Pages 部署
+配色与字号位于 CSS 开头；中文使用系统宋体/楷体，英文使用 Times New Roman，有系统衬线回退。
 
-项目仓库：https://github.com/supremewen666/supremewen666.github.io
-
-1. 在仓库 **Settings → Pages → Build and deployment → Source** 选择 **GitHub Actions**。
-2. 在 **Actions** 中运行 `Deploy personal website to GitHub Pages`，或推送到 `main` 自动部署。
-3. 部署成功后访问 https://supremewen666.github.io/ 。
-
-工作流只发布 `index.html` 和 `assets/`，不会发布 README 或开发文件。
-
-`sprw.github.io` 是页面品牌名称。GitHub Pages 默认域名由账号决定：这个仓库对应 `supremewen666.github.io/`。要使用 `https://sprw.github.io/`，需要拥有 `sprw` GitHub 账号及其 `sprw.github.io` 仓库。不要将 `sprw.github.io` 写入 CNAME；它不是当前账号可任意绑定的自定义域名。
-
-GitHub 官方说明：https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages
-
-## 本地预览
+## 预览与发布
 
 ```sh
 python3 -m http.server 8000
 ```
 
-打开 http://localhost:8000 。
+打开 http://localhost:8000 。文件也可直接打开；`#about` 和 `#blog` 分别对应两个视图。
+
+代码仓库：https://github.com/supremewen666/supremewen666.github.io
+
+主页：https://supremewen666.github.io/
+
+推送到 `main` 后，GitHub Actions 自动部署。仓库 Settings → Pages 的 Source 应为 GitHub Actions。
+
+视觉结构参考用户指定的博客：封面、波浪分界与文章卡片；本站使用原创 SVG 图形和自己的占位内容，未复制参考站的文章和图片。
