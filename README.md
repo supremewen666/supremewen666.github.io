@@ -1,6 +1,6 @@
 # sprw.github.io
 
-白底、石墨灰文字、少量紫色链接的个人主页。使用系统无衬线字体，12–13px 正文、14px 分区标题与细分隔线组织内容，减少页眉和段落留白。
+白底、深灰文字、少量青绿色链接的个人主页。使用系统无衬线字体，13px 正文、15px 分区标题与细分隔线组织内容，减少页眉和段落留白。
 
 ## 结构
 
@@ -30,4 +30,4 @@ python3 -m http.server 8000
 
 仓库：https://github.com/supremewen666/supremewen666.github.io
 
-本轮排版参考：https://paco.me/ 、https://antfu.me/ 、https://overreacted.io/ 。未复制参考网站的文案和个人资料。
+本轮风格参考：https://yunxinli.github.io/ ，保留紧凑单列，并在分区标题前使用少量 emoji。未复制参考网站的文案和个人资料。
