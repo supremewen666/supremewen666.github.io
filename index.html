@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#ffffff">
-<meta name="description" content="sprw 的个人主页，记录教育、实践、项目与生活想法。">
-<title>sprw · 简介与个人感想</title>
+<meta name="description" content="温顺尧的个人主页：哈尔滨工业大学计算机科学与技术本科生，关注 Agent 记忆、操作系统与 AI infrastructure。">
+<title>温顺尧 · 简介与个人感想</title>
 <link rel="icon" href="https://avatars.githubusercontent.com/u/229849594?v=4&amp;s=64" type="image/png" sizes="64x64">
 <link rel="apple-touch-icon" href="https://avatars.githubusercontent.com/u/229849594?v=4&amp;s=180" sizes="180x180">
 <style>:root{--ink:#3d4145;--muted:#73787d;--line:#eceeef;--soft:#f7f8f8;--accent:#287e86;--font:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif}
@@ -21,6 +21,16 @@
 
 .section-icon{display:inline-block;font-size:15px;margin-right:8px;vertical-align:1px}.box-title h2{display:flex;align-items:center}.banner-copy h1 .section-icon{font-size:19px;vertical-align:2px}.box-body a{text-decoration:underline;text-decoration-color:#b9d7d7}.box-body a:hover{text-decoration-color:currentColor}
 .profile-avatar{display:block;width:144px;height:144px;object-fit:cover;border-radius:50%;margin:0 0 18px;border:1px solid var(--line)}.resume-grid{min-width:0}.profile-panel .contact-line small{display:block;margin:0 0 2px}.info-box:first-child{padding-top:0}@media(max-width:600px){.profile-avatar{width:84px;height:84px;margin-bottom:11px}.profile-body{margin-top:12px}.profile-panel .contact-line small{display:inline;margin-right:7px}.contact-line{margin:6px 0 0}}
+
+/* Content typography: readable research notes without changing the 1:2 layout. */
+.profile-top p{display:block;font-size:12px;color:var(--muted);margin:4px 0 0}
+.box-body p+p{margin-top:7px}.box-body{overflow-wrap:anywhere}
+.entry-row{gap:8px 14px;flex-wrap:wrap}.entry-row h3{flex:1 1 240px}.date{white-space:nowrap}
+.detail-list{padding-left:18px;margin:5px 0 0}.detail-list li{margin:3px 0}
+.paper-list{padding-left:20px;margin:0}.paper-list li+li{margin-top:12px}.paper-list h3{line-height:1.65;font-weight:550}.paper-meta{font-size:11px;color:var(--muted)}
+.research-list{margin-top:8px}.research-list li{margin:6px 0}.research-list strong{font-weight:550;color:var(--ink)}
+@media(max-width:600px){.entry-row h3{flex-basis:100%}.date{font-size:11px}.box-body{font-size:13px;line-height:1.8}.paper-list h3{font-size:13px}.profile-top p{display:block}}
+.research-details{margin-top:8px}.research-details summary{cursor:pointer;width:fit-content;font-size:12px;color:var(--accent)}.research-details[open] summary{margin-bottom:8px}.research-details summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 </style>
 </head>
 <body>
@@ -29,14 +39,70 @@
 <main id="main">
 <div class="view" id="about" role="tabpanel" aria-labelledby="tab-about" tabindex="0">
 <div class="overview">
-<aside class="profile-panel"><div class="profile-top"><img class="profile-avatar" src="https://avatars.githubusercontent.com/u/229849594?v=4" alt="Beelli Joe avatar" width="144" height="144" referrerpolicy="no-referrer"><h1>sprw</h1><p><span class="zh">个人主页</span><span class="en">Personal website</span></p></div><div class="profile-body"><div class="contact-line"><small>GITHUB</small><a href="https://github.com/supremewen666" target="_blank" rel="noopener noreferrer">@supremewen666 ↗</a></div><div class="contact-line"><small>EMAIL</small><span class="zh">邮箱待补充</span><span class="en">To be added</span></div></div></aside>
+<aside class="profile-panel"><div class="profile-top"><img class="profile-avatar" src="https://avatars.githubusercontent.com/u/229849594?v=4" alt="Beelli Joe avatar" width="144" height="144" referrerpolicy="no-referrer"><h1><span class="zh">温顺尧</span><span class="en">Shunyao Wen</span></h1><p>sprw / Beelli Joe</p></div><div class="profile-body"><div class="contact-line"><small>GITHUB</small><a href="https://github.com/supremewen666" target="_blank" rel="noopener noreferrer">@supremewen666 ↗</a></div><div class="contact-line"><small>EMAIL</small><a href="mailto:wenshunyao6662021@gmail.com">wenshunyao6662021@gmail.com</a></div></div></aside>
 <div class="resume-grid">
-<section class="info-box full" id="bio"><div class="box-title"><h2><span class="section-icon" aria-hidden="true">😎</span><span class="zh">关于我</span><span class="en">About me</span></h2></div><div class="box-body"><p><span class="zh">你好，我是 sprw！这里放着我的学习经历、项目，以及一些个人记录。</span><span class="en">Hi, I’m sprw! This is where I keep my background, projects, and personal notes.</span></p></div></section>
-<section class="info-box" id="education"><div class="box-title"><h2><span class="section-icon" aria-hidden="true">🎓</span><span class="zh">教育经历</span><span class="en">Education</span></h2></div><div class="box-body"><div class="entry-row"><h3><span class="zh">学校 / 专业</span><span class="en">University / Major</span></h3></div><p><span class="zh">学院 / 专业 · 学位</span><span class="en">School / Major · Degree</span></p><div class="entry-meta"><span class="zh">入学 — 毕业年份</span><span class="en">Start — Graduation year</span></div></div></section>
-<section class="info-box" id="experience"><div class="box-title"><h2><span class="section-icon" aria-hidden="true">💼</span><span class="zh">实习经历</span><span class="en">Internships</span></h2></div><div class="box-body"><div class="entry-row"><h3><span class="zh">公司 / 岗位</span><span class="en">Company / Role</span></h3></div><p><span class="zh">实习岗位 · 所属团队</span><span class="en">Role · Team</span></p><div class="entry-meta"><span class="zh">开始 — 结束时间</span><span class="en">Start — End date</span></div></div></section>
-<section class="info-box full" id="projects"><div class="box-title"><h2><span class="section-icon" aria-hidden="true">🛠️</span><span class="zh">项目经历</span><span class="en">Projects</span></h2></div><div class="box-body"><ul class="resume-list"><li><div class="entry-row"><h3><span class="zh">我的个人主页</span><span class="en">My personal website</span></h3><span class="date">HTML / CSS / JS</span></div><p><span class="zh">双语个人主页与博客，支持响应式阅读。</span><span class="en">A bilingual personal site and blog with a responsive layout.</span> <a href="https://github.com/supremewen666/supremewen666.github.io" target="_blank" rel="noopener noreferrer"><span class="zh">源码 ↗</span><span class="en">Source ↗</span></a></p></li><li><div class="entry-row"><h3><span class="zh">其他项目</span><span class="en">Additional project</span></h3></div><p><span class="zh">项目内容待补充。</span><span class="en">Project details to be added.</span></p></li></ul></div></section>
-<section class="info-box" id="publications"><div class="box-title"><h2><span class="section-icon" aria-hidden="true">📄</span><span class="zh">论文发表</span><span class="en">Publications</span></h2></div><div class="box-body"><div class="entry-row"><h3><span class="zh">论文与研究成果</span><span class="en">Papers & research</span></h3></div><p><span class="zh">标题、作者、会议 / 期刊、年份。</span><span class="en">Title, authors, venue, and year.</span></p><div class="entry-meta"><span class="zh">补充论文与代码链接</span><span class="en">Add paper and code links</span></div></div></section>
-<section class="info-box" id="interests"><div class="box-title"><h2><span class="section-icon" aria-hidden="true">🌱</span><span class="zh">兴趣方向</span><span class="en">Interests</span></h2></div><div class="box-body"><div class="interest-tags"><span><span class="zh">研究方向</span><span class="en">Research</span></span><span><span class="zh">技术兴趣</span><span class="en">Technology</span></span><span><span class="zh">生活爱好</span><span class="en">Hobbies</span></span></div><p class="entry-meta"><span class="zh">具体方向待填写。</span><span class="en">Specific interests to be added.</span></p></div></section>
+<section class="info-box" id="bio">
+  <div class="box-title"><h2><span class="section-icon" aria-hidden="true">😎</span><span class="zh">关于我</span><span class="en">About me</span></h2></div>
+  <div class="box-body">
+    <p><span class="zh">你好，我是温顺尧，目前本科就读于哈尔滨工业大学计算机科学与技术专业。</span><span class="en">Hi, I’m Shunyao Wen, an undergraduate studying Computer Science and Technology at Harbin Institute of Technology.</span></p>
+    <p><span class="zh">我曾在哈尔滨工业大学（深圳）李东方副教授指导下开展 Agent 记忆机制相关研究。相关论文正在 ICLR 2027 审稿中。</span><span class="en">I have worked on agent memory mechanisms under the supervision of Associate Professor Dongfang Li at Harbin Institute of Technology, Shenzhen. The resulting paper is under review at ICLR 2027.</span></p>
+    <p><span class="zh">目前，我希望进一步探索操作系统与 AI infrastructure，尤其关注 AI 执行状态管理、跨层资源协调和系统性能优化。欢迎交流相关研究机会与合作。</span><span class="en">I’m now interested in operating systems and AI infrastructure, particularly AI execution-state management, cross-layer resource coordination, and systems performance. I welcome research opportunities and collaboration in these areas.</span></p>
+  </div>
+</section>
+<section class="info-box" id="education">
+  <div class="box-title"><h2><span class="section-icon" aria-hidden="true">🎓</span><span class="zh">教育经历</span><span class="en">Education</span></h2></div>
+  <div class="box-body">
+    <div class="entry-row"><h3><span class="zh">哈尔滨工业大学</span><span class="en">Harbin Institute of Technology</span></h3></div>
+    <p><span class="zh">本科 · 计算机科学与技术</span><span class="en">Undergraduate · Computer Science and Technology</span></p>
+  </div>
+</section>
+<section class="info-box" id="experience">
+  <div class="box-title"><h2><span class="section-icon" aria-hidden="true">💼</span><span class="zh">实习经历</span><span class="en">Internship experience</span></h2></div>
+  <div class="box-body">
+    <div class="entry-row"><h3><span class="zh">某头部券商资产管理公司（上海）</span><span class="en">Asset management company of a leading securities firm · Shanghai</span></h3><span class="date">2026.07 — 2026.09</span></div>
+    <p><span class="zh">中台开发实习</span><span class="en">Platform development internship</span></p>
+    <ul class="detail-list"><li><span class="zh">基于内部基础设施、平台 API 与公共组件，参与构建可复用的服务能力。</span><span class="en">Contributed to reusable services built on internal infrastructure, platform APIs, and shared components.</span></li></ul>
+  </div>
+</section>
+<section class="info-box" id="projects">
+  <div class="box-title"><h2><span class="section-icon" aria-hidden="true">🛠️</span><span class="zh">项目经历</span><span class="en">Projects</span></h2></div>
+  <div class="box-body">
+    <p class="entry-meta">C++ / Python</p>
+    <ul class="resume-list">
+      <li><h3>EasyRAG</h3><p><span class="zh">检索增强生成（RAG）教程。</span><span class="en">A tutorial on retrieval-augmented generation (RAG).</span></p></li>
+      <li><h3>GovernMem</h3><p><span class="zh">围绕持久化 Agent 记忆的治理、演化与失败修复开展的论文工作。</span><span class="en">Research on governed evolution and failure repair for persistent agent memory.</span> <a href="#publications"><span class="zh">论文信息 ↓</span><span class="en">Paper details ↓</span></a></p></li>
+      <li><h3>Harness-Lock</h3><p><span class="zh">探索多智能体（multi-agent）通信机制。</span><span class="en">Exploring communication mechanisms for multi-agent systems.</span></p></li>
+    </ul>
+  </div>
+</section>
+<section class="info-box" id="publications">
+  <div class="box-title"><h2><span class="section-icon" aria-hidden="true">📄</span><span class="zh">论文与研究</span><span class="en">Papers & research</span></h2></div>
+  <div class="box-body">
+    <ol class="paper-list">
+      <li><h3>GovernMem: Governed Evolution of Persistent Agent Memory through Failure Repair</h3>
+        <p class="paper-meta"><span class="zh">第一作者 · ICLR 2027 在审</span><span class="en">First author · Under review at ICLR 2027</span></p>
+      </li>
+      <li><h3>Memory-Centric Continual Learning for AI Agents</h3>
+        <p class="paper-meta"><span class="zh">综述合作作者 · 参与 memory-policy 部分草稿撰写</span><span class="en">Survey co-author · Contributed to memory-policy drafts</span></p>
+      </li>
+    </ol>
+  </div>
+</section>
+<section class="info-box" id="interests">
+  <div class="box-title"><h2><span class="section-icon" aria-hidden="true">🌱</span><span class="zh">研究兴趣</span><span class="en">Research interests</span></h2></div>
+  <div class="box-body">
+    <p><span class="zh">此前，我主要关注递归式自我改进（RSI）和 Agent 记忆。我更感兴趣的问题是：持久记忆如何支持持续学习、记忆的扩展规律（memory scaling）是什么，以及如何在减少人工介入的同时保持可控、可评估的改进。</span><span class="en">My earlier interests centered on recursive self-improvement (RSI) and agent memory: how persistent memory can support continual learning, what its scaling behavior looks like, and how improvement can remain controllable and measurable with less human intervention.</span></p>
+    <details class="research-details"><summary><span class="zh">研究思路与具体方向</span><span class="en">Research perspective & directions</span></summary>
+    <p><span class="zh">这些探索让我开始关注更底层的系统机制。我的一个判断是，Agent 的长期演化不仅取决于记忆策略，还受到执行状态与资源管理方式的约束。我想从 OS 的视角进一步研究这些问题，而不只停留在提示词或应用层设计。</span><span class="en">This exploration led me to lower-level systems mechanisms. My working view is that long-term agent evolution depends not only on memory policies, but also on how execution state and resources are managed. I want to investigate these questions from an OS perspective, beyond prompts and application-level design.</span></p>
+    <ul class="detail-list research-list">
+      <li><span class="zh"><strong>AI 执行状态管理：</strong>研究执行状态（包括 KV Cache 等运行时状态）如何跨内存、存储、网络与进程边界被高效、正确地管理。</span><span class="en"><strong>AI execution-state management:</strong> efficiently and correctly managing execution state, including runtime state such as the KV cache, across memory, storage, networks, and process boundaries.</span></li>
+      <li><span class="zh"><strong>跨层资源协调：</strong>探索框架、运行时、驱动与设备之间的协同，以及 GPU 资源的复用、隔离与抢占。</span><span class="en"><strong>Cross-layer resource coordination:</strong> cooperation across frameworks, runtimes, drivers, and devices, including GPU sharing, isolation, and preemption.</span></li>
+      <li><span class="zh"><strong>OS 与 AI infrastructure：</strong>探索 LLM 与内核态／用户态系统机制的结合，以及以系统机制为核心的性能优化。</span><span class="en"><strong>OS and AI infrastructure:</strong> studying how LLMs interact with kernel- and user-space mechanisms, and improving performance through systems design.</span></li>
+    </ul>
+  
+    </details>
+  </div>
+</section>
 </div>
 <div class="overview-footer"><button class="text-button" type="button" data-open-blog><span class="zh">个人感想 →</span><span class="en">Read the blog →</span></button></div>
 </div></div>
@@ -52,25 +118,26 @@
 <footer class="site-footer"><span>© <span id="year">2026</span> sprw</span><span><span class="zh">个人主页</span><span class="en">Personal website</span></span></footer>
 </main>
 <script>
-// Edit bilingual content in the .zh and .en spans. Keep real facts distinct from samples.
+// 中文内容位于 .zh，英文位于 .en；个人资料与博客示例分别维护。
 const tabs=[...document.querySelectorAll('[data-view]')];
 const state={view:'about',lang:'zh',filter:'all'};
 function activate(view,{updateHash=true,focus=false}={}){
  state.view=view==='blog'?'blog':'about';
  tabs.forEach(tab=>{const selected=tab.dataset.view===state.view;tab.setAttribute('aria-selected',String(selected));tab.tabIndex=selected?0:-1});
  document.querySelectorAll('.view').forEach(panel=>{const selected=panel.id===state.view;panel.hidden=!selected;panel.classList.remove('is-entering');if(selected){requestAnimationFrame(()=>panel.classList.add('is-entering'))}});
- if(updateHash&&location.hash!=='#'+state.view)history.pushState(null,'','#'+state.view);
+ if(updateHash&&location.hash!=='#'+state.view){try{history.pushState(null,'','#'+state.view)}catch{location.hash=state.view}}
  updateTitle();if(focus)document.getElementById(state.view).focus({preventScroll:true});
 }
-function updateTitle(){document.title=state.lang==='zh'?`sprw · ${state.view==='about'?'简介':'个人感想'}`:`sprw · ${state.view==='about'?'About':'Blog'}`}
-function setLanguage(lang){state.lang=lang==='en'?'en':'zh';document.documentElement.lang=state.lang==='zh'?'zh-CN':'en';document.getElementById('zh-label').classList.toggle('chosen',state.lang==='zh');document.getElementById('en-label').classList.toggle('chosen',state.lang==='en');document.getElementById('language').setAttribute('aria-label',state.lang==='zh'?'Switch to English':'切换为中文');document.querySelector('[role="tablist"]').setAttribute('aria-label',state.lang==='zh'?'主页视图':'Homepage views');document.querySelector('.filters').setAttribute('aria-label',state.lang==='zh'?'文章分类':'Post categories');updateTitle();try{localStorage.setItem('sprw-language',state.lang)}catch{}}
+function updateTitle(){document.title=state.lang==='zh'?`温顺尧 · ${state.view==='about'?'简介':'个人感想'}`:`Shunyao Wen · ${state.view==='about'?'About':'Blog'}`} 
+function setLanguage(lang){state.lang=lang==='en'?'en':'zh';document.documentElement.lang=state.lang==='zh'?'zh-CN':'en';document.querySelector('meta[name="description"]').content=state.lang==='zh'?'温顺尧的个人主页：教育、研究、项目与个人记录。':'Shunyao Wen — background, research, projects, and personal notes.';document.getElementById('zh-label').classList.toggle('chosen',state.lang==='zh');document.getElementById('en-label').classList.toggle('chosen',state.lang==='en');document.getElementById('language').setAttribute('aria-label',state.lang==='zh'?'Switch to English':'切换为中文');document.querySelector('[role="tablist"]').setAttribute('aria-label',state.lang==='zh'?'主页视图':'Homepage views');document.querySelector('.filters').setAttribute('aria-label',state.lang==='zh'?'文章分类':'Post categories');updateTitle();try{localStorage.setItem('sprw-language',state.lang)}catch{}}
 function applyFilter(category){state.filter=['all','learning','life'].includes(category)?category:'all';document.querySelectorAll('[data-filter]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.filter===state.filter)));document.querySelectorAll('[data-category]').forEach(post=>{post.hidden=state.filter!=='all'&&post.dataset.category!==state.filter})}
 tabs.forEach((tab,index)=>{tab.addEventListener('click',()=>activate(tab.dataset.view));tab.addEventListener('keydown',event=>{let next;if(event.key==='ArrowRight'||event.key==='ArrowLeft')next=(index+1)%tabs.length;else if(event.key==='Home')next=0;else if(event.key==='End')next=tabs.length-1;else return;event.preventDefault();activate(tabs[next].dataset.view);tabs[next].focus()})});
 document.querySelector('[data-open-blog]').addEventListener('click',()=>{activate('blog',{focus:true});window.scrollTo({top:0,behavior:'auto'})});document.querySelector('[data-open-about]').addEventListener('click',()=>{activate('about',{focus:true});window.scrollTo({top:0,behavior:'auto'})});
 document.getElementById('language').addEventListener('click',()=>setLanguage(state.lang==='zh'?'en':'zh'));
 document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>applyFilter(button.dataset.filter)));
-window.addEventListener('hashchange',()=>activate(location.hash.slice(1),{updateHash:false}));window.addEventListener('popstate',()=>activate(location.hash.slice(1),{updateHash:false}));
-try{state.lang=localStorage.getItem('sprw-language')==='en'?'en':'zh'}catch{}setLanguage(state.lang);activate(location.hash.slice(1),{updateHash:false});document.getElementById('year').textContent=new Date().getFullYear();
+function syncLocation(){const hash=location.hash.slice(1);if(hash==='blog'||hash==='about'||!hash){activate(hash,{updateHash:false})}else if(document.getElementById(hash)?.closest('#about')){activate('about',{updateHash:false})}}
+window.addEventListener('hashchange',syncLocation);window.addEventListener('popstate',syncLocation);
+try{state.lang=localStorage.getItem('sprw-language')==='en'?'en':'zh'}catch{}setLanguage(state.lang);syncLocation();document.getElementById('year').textContent=new Date().getFullYear();
 </script>
 </body>
 </html>
