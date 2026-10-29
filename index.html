@@ -32,14 +32,13 @@
 @media(max-width:600px){.entry-row h3{flex-basis:100%}.date{font-size:11px}.box-body{font-size:13px;line-height:1.8}.paper-list h3{font-size:13px}.profile-top p{display:block}}
 .research-details{margin-top:8px}.research-details summary{cursor:pointer;width:fit-content;font-size:12px;color:var(--accent)}.research-details[open] summary{margin-bottom:8px}.research-details summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 
-/* Each profile section is a label/content row inside the right-hand column. */
-.info-box{display:grid;grid-template-columns:100px minmax(0,1fr);gap:18px;padding:12px 0;border-bottom:1px solid var(--line)}
-.info-box:first-child{padding-top:0;padding-bottom:12px}.info-box:last-child{border-bottom:0}
-.box-title{padding:0;margin:0;border:0}.box-title h2{font-size:13px;line-height:1.65;align-items:flex-start}.section-icon{font-size:13px;margin-right:6px;flex:none}.box-title h2 .zh,.box-title h2 .en{min-width:0}.box-body{min-width:0}
-.education-entry+.education-entry{margin-top:11px}.entry-row h3{flex:1 1 200px}.post-body h4{font-size:13px;font-weight:600;margin:15px 0 7px;color:var(--ink)}.post-body h4:first-child{margin-top:0}
-@media(max-width:800px){.info-box{grid-template-columns:85px minmax(0,1fr);gap:12px}}
-@media(max-width:600px){.info-box{grid-template-columns:82px minmax(0,1fr);gap:12px;padding:12px 0}.box-title h2{font-size:12px;line-height:1.7}.section-icon{font-size:12px;margin-right:4px}.entry-row h3{flex-basis:100%}.date{font-size:11px}}
-@media print{.info-box{display:grid;grid-template-columns:95px minmax(0,1fr);gap:15px}}
+/* Main headings stay above each section; item headings align left of details. */
+.info-box{display:block;padding:8px 0 10px;border-bottom:0}.info-box:first-child{padding-top:0;padding-bottom:11px}
+.box-title{margin:0 0 8px;padding:0 0 5px;border-bottom:1px solid var(--line)}.box-title h2{font-size:15px;line-height:1.4;align-items:center}.section-icon{font-size:15px;margin-right:8px}
+.subentry{display:grid;grid-template-columns:minmax(130px,32%) minmax(0,1fr);gap:16px;align-items:start}.subentry+.subentry{margin-top:12px}.subentry h3{margin:0;font-size:13px;font-weight:550;line-height:1.65;overflow-wrap:anywhere}.subentry-details{min-width:0}.subentry-details p{margin-top:0}.subentry-details .date{display:block;margin-bottom:3px}.resume-list li+li{margin-top:10px}.paper-list{list-style:none;padding:0}.paper-title{font-size:13px;font-weight:500;line-height:1.65;color:var(--ink)}
+.post-body h4{font-size:13px;font-weight:600;margin:15px 0 7px;color:var(--ink)}.post-body h4:first-child{margin-top:0}
+@media(max-width:600px){.subentry{grid-template-columns:105px minmax(0,1fr);gap:12px}.subentry h3{font-size:12px}.box-title h2{font-size:14px}.section-icon{font-size:14px}.paper-title{font-size:12px}.date{font-size:11px}}
+@media print{.subentry{display:grid;grid-template-columns:130px minmax(0,1fr);gap:15px}}
 </style>
 </head>
 <body>
@@ -61,18 +60,17 @@
 <section class="info-box" id="education">
   <div class="box-title"><h2><span class="section-icon" aria-hidden="true">🎓</span><span class="zh">教育与科研</span><span class="en">Education & research</span></h2></div>
   <div class="box-body">
-    <div class="education-entry"><div class="entry-row"><h3><span class="zh">哈尔滨工业大学</span><span class="en">Harbin Institute of Technology</span></h3><span class="date">2024 — 2028</span></div>
-    <p><span class="zh">本科 · 计算机科学与技术</span><span class="en">Undergraduate · Computer Science and Technology</span></p></div>
-    <div class="education-entry"><div class="entry-row"><h3><span class="zh">哈尔滨工业大学（深圳）</span><span class="en">Harbin Institute of Technology, Shenzhen</span></h3><span class="date">2026 — 2027</span></div>
-    <p><span class="zh">Agent 记忆机制研究 · 导师：李东方副教授</span><span class="en">Agent memory research · Supervisor: Associate Professor Dongfang Li</span></p></div>
+    <div class="subentry"><h3><span class="zh">哈尔滨工业大学</span><span class="en">Harbin Institute of Technology</span></h3><div class="subentry-details"><span class="date">2024 — 2028</span><p><span class="zh">本科 · 计算机科学与技术</span><span class="en">Undergraduate · Computer Science and Technology</span></p></div></div>
+    <div class="subentry"><h3><span class="zh">哈尔滨工业大学（深圳）</span><span class="en">Harbin Institute of Technology, Shenzhen</span></h3><div class="subentry-details"><span class="date">2026 — 2027</span><p><span class="zh">Agent 记忆机制研究 · 导师：李东方副教授</span><span class="en">Agent memory research · Supervisor: Associate Professor Dongfang Li</span></p></div></div>
   </div>
 </section>
 <section class="info-box" id="experience">
   <div class="box-title"><h2><span class="section-icon" aria-hidden="true">💼</span><span class="zh">实习经历</span><span class="en">Internship experience</span></h2></div>
   <div class="box-body">
-    <div class="entry-row"><h3><span class="zh">某头部券商资产管理公司（上海）</span><span class="en">Asset management company of a leading securities firm · Shanghai</span></h3><span class="date">2026.07 — 2026.09</span></div>
+    <div class="subentry"><h3><span class="zh">某头部券商资产管理公司（上海）</span><span class="en">Asset management company of a leading securities firm · Shanghai</span></h3><div class="subentry-details"><span class="date">2026.07 — 2026.09</span>
     <p><span class="zh">中台开发实习</span><span class="en">Platform development internship</span></p>
     <ul class="detail-list"><li><span class="zh">基于内部基础设施、平台 API 与公共组件，参与构建可复用的服务能力。</span><span class="en">Contributed to reusable services built on internal infrastructure, platform APIs, and shared components.</span></li></ul>
+  </div></div>
   </div>
 </section>
 <section class="info-box" id="projects">
@@ -80,9 +78,9 @@
   <div class="box-body">
     <p class="entry-meta">C++ / Python</p>
     <ul class="resume-list">
-      <li><h3>EasyRAG</h3><p><span class="zh">检索增强生成（RAG）教程。</span><span class="en">A tutorial on retrieval-augmented generation (RAG).</span></p></li>
-      <li><h3>GovernMem</h3><p><span class="zh">围绕持久化 Agent 记忆的治理、演化与失败修复开展的论文工作。</span><span class="en">Research on governed evolution and failure repair for persistent agent memory.</span> <a href="#publications"><span class="zh">论文信息 ↓</span><span class="en">Paper details ↓</span></a></p></li>
-      <li><h3>Harness-Lock</h3><p><span class="zh">探索多智能体（multi-agent）通信机制。</span><span class="en">Exploring communication mechanisms for multi-agent systems.</span></p></li>
+      <li class="subentry"><h3>EasyRAG</h3><div class="subentry-details"><p><span class="zh">检索增强生成（RAG）教程。</span><span class="en">A tutorial on retrieval-augmented generation (RAG).</span></p></div></li>
+      <li class="subentry"><h3>GovernMem</h3><div class="subentry-details"><p><span class="zh">围绕持久化 Agent 记忆的治理、演化与失败修复开展的论文工作。</span><span class="en">Research on governed evolution and failure repair for persistent agent memory.</span> <a href="#publications"><span class="zh">论文信息 ↓</span><span class="en">Paper details ↓</span></a></p></div></li>
+      <li class="subentry"><h3>Harness-Lock</h3><div class="subentry-details"><p><span class="zh">探索多智能体（multi-agent）通信机制。</span><span class="en">Exploring communication mechanisms for multi-agent systems.</span></p></div></li>
     </ul>
   </div>
 </section>
@@ -90,14 +88,14 @@
   <div class="box-title"><h2><span class="section-icon" aria-hidden="true">📄</span><span class="zh">论文与研究</span><span class="en">Papers & research</span></h2></div>
   <div class="box-body">
     <ol class="paper-list">
-      <li><h3>GovernMem: Governed Evolution of Persistent Agent Memory through Failure Repair</h3>
+<li class="subentry"><h3>GovernMem</h3><div class="subentry-details"><div class="paper-title">GovernMem: Governed Evolution of Persistent Agent Memory through Failure Repair</div>
         <p class="paper-meta"><span class="zh">第一作者 · ICLR 2027 在审</span><span class="en">First author · Under review at ICLR 2027</span></p>
-      </li>
-      <li><h3><a href="https://arxiv.org/abs/2610.29357" target="_blank" rel="noopener noreferrer">Memory-Centric Continual Learning for AI Agents</a></h3>
+      </div></li>
+<li class="subentry"><h3><span class="zh">综述论文</span><span class="en">Survey paper</span></h3><div class="subentry-details"><div class="paper-title"><a href="https://arxiv.org/abs/2610.29357" target="_blank" rel="noopener noreferrer">Memory-Centric Continual Learning for AI Agents</a></div>
         <p class="paper-meta"><span class="zh">综述合作作者 · 参与 memory-policy 部分撰写</span><span class="en">Survey co-author · Contributed to the memory-policy section</span></p>
         <p class="paper-meta">arXiv:2610.29357 · 2026 · <a href="https://arxiv.org/pdf/2610.29357" target="_blank" rel="noopener noreferrer">PDF ↗</a></p>
-      </li>
-    </ol>
+      </div></li>
+</ol>
   </div>
 </section>
 <section class="info-box" id="interests">
