@@ -31,6 +31,15 @@
 .research-list{margin-top:8px}.research-list li{margin:6px 0}.research-list strong{font-weight:550;color:var(--ink)}
 @media(max-width:600px){.entry-row h3{flex-basis:100%}.date{font-size:11px}.box-body{font-size:13px;line-height:1.8}.paper-list h3{font-size:13px}.profile-top p{display:block}}
 .research-details{margin-top:8px}.research-details summary{cursor:pointer;width:fit-content;font-size:12px;color:var(--accent)}.research-details[open] summary{margin-bottom:8px}.research-details summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+/* Each profile section is a label/content row inside the right-hand column. */
+.info-box{display:grid;grid-template-columns:100px minmax(0,1fr);gap:18px;padding:12px 0;border-bottom:1px solid var(--line)}
+.info-box:first-child{padding-top:0;padding-bottom:12px}.info-box:last-child{border-bottom:0}
+.box-title{padding:0;margin:0;border:0}.box-title h2{font-size:13px;line-height:1.65;align-items:flex-start}.section-icon{font-size:13px;margin-right:6px;flex:none}.box-title h2 .zh,.box-title h2 .en{min-width:0}.box-body{min-width:0}
+.education-entry+.education-entry{margin-top:11px}.entry-row h3{flex:1 1 200px}.post-body h4{font-size:13px;font-weight:600;margin:15px 0 7px;color:var(--ink)}.post-body h4:first-child{margin-top:0}
+@media(max-width:800px){.info-box{grid-template-columns:85px minmax(0,1fr);gap:12px}}
+@media(max-width:600px){.info-box{grid-template-columns:82px minmax(0,1fr);gap:12px;padding:12px 0}.box-title h2{font-size:12px;line-height:1.7}.section-icon{font-size:12px;margin-right:4px}.entry-row h3{flex-basis:100%}.date{font-size:11px}}
+@media print{.info-box{display:grid;grid-template-columns:95px minmax(0,1fr);gap:15px}}
 </style>
 </head>
 <body>
@@ -50,10 +59,12 @@
   </div>
 </section>
 <section class="info-box" id="education">
-  <div class="box-title"><h2><span class="section-icon" aria-hidden="true">🎓</span><span class="zh">教育经历</span><span class="en">Education</span></h2></div>
+  <div class="box-title"><h2><span class="section-icon" aria-hidden="true">🎓</span><span class="zh">教育与科研</span><span class="en">Education & research</span></h2></div>
   <div class="box-body">
-    <div class="entry-row"><h3><span class="zh">哈尔滨工业大学</span><span class="en">Harbin Institute of Technology</span></h3></div>
-    <p><span class="zh">本科 · 计算机科学与技术</span><span class="en">Undergraduate · Computer Science and Technology</span></p>
+    <div class="education-entry"><div class="entry-row"><h3><span class="zh">哈尔滨工业大学</span><span class="en">Harbin Institute of Technology</span></h3><span class="date">2024 — 2028</span></div>
+    <p><span class="zh">本科 · 计算机科学与技术</span><span class="en">Undergraduate · Computer Science and Technology</span></p></div>
+    <div class="education-entry"><div class="entry-row"><h3><span class="zh">哈尔滨工业大学（深圳）</span><span class="en">Harbin Institute of Technology, Shenzhen</span></h3><span class="date">2026 — 2027</span></div>
+    <p><span class="zh">Agent 记忆机制研究 · 导师：李东方副教授</span><span class="en">Agent memory research · Supervisor: Associate Professor Dongfang Li</span></p></div>
   </div>
 </section>
 <section class="info-box" id="experience">
@@ -82,8 +93,9 @@
       <li><h3>GovernMem: Governed Evolution of Persistent Agent Memory through Failure Repair</h3>
         <p class="paper-meta"><span class="zh">第一作者 · ICLR 2027 在审</span><span class="en">First author · Under review at ICLR 2027</span></p>
       </li>
-      <li><h3>Memory-Centric Continual Learning for AI Agents</h3>
-        <p class="paper-meta"><span class="zh">综述合作作者 · 参与 memory-policy 部分草稿撰写</span><span class="en">Survey co-author · Contributed to memory-policy drafts</span></p>
+      <li><h3><a href="https://arxiv.org/abs/2610.29357" target="_blank" rel="noopener noreferrer">Memory-Centric Continual Learning for AI Agents</a></h3>
+        <p class="paper-meta"><span class="zh">综述合作作者 · 参与 memory-policy 部分撰写</span><span class="en">Survey co-author · Contributed to the memory-policy section</span></p>
+        <p class="paper-meta">arXiv:2610.29357 · 2026 · <a href="https://arxiv.org/pdf/2610.29357" target="_blank" rel="noopener noreferrer">PDF ↗</a></p>
       </li>
     </ol>
   </div>
@@ -110,10 +122,24 @@
 <div class="blog-banner"><div class="banner-copy"><h1><span class="section-icon" aria-hidden="true">💬</span><span class="zh">个人感想</span><span class="en">Writing</span></h1><p><span class="zh">学习笔记和日常记录。</span><span class="en">Notes on learning and everyday life.</span></p></div></div>
 <div class="blog-layout"><div><div class="blog-title-row"><h2><span class="zh">文章与便签</span><span class="en">Notes & posts</span></h2><div class="filters" role="group" aria-label="文章分类"><button class="filter" type="button" data-filter="all" aria-pressed="true"><span class="zh">全部</span><span class="en">All</span></button><button class="filter" type="button" data-filter="learning" aria-pressed="false"><span class="zh">学习</span><span class="en">Learning</span></button><button class="filter" type="button" data-filter="life" aria-pressed="false"><span class="zh">生活</span><span class="en">Life</span></button></div></div>
 <div class="post-list" aria-live="polite">
-<article class="post-card" data-category="learning"><div class="post-info"><div class="post-meta"><span><span class="zh">学习笔记</span><span class="en">Learning</span></span><span><span class="zh">模板 · 待发布</span><span class="en">Template · Unpublished</span></span></div><h3><span class="zh">学习笔记</span><span class="en">Learning notes</span></h3><p><span class="zh">示例条目。以后在这里记录学习中遇到的问题。</span><span class="en">Sample entry. A place for questions and notes from learning.</span></p><details><summary><span class="zh">展开示例 →</span><span class="en">Read sample →</span></summary><div class="post-body"><p><span class="zh">这是一篇示例便签，还不是正式发布的文章。以后可以在这里记录：问题是什么、试过哪些方法、最后理解了什么。</span><span class="en">This is a sample note, not a published post. Replace it with the question you started with, what you tried, and what you learned.</span></p><p><span class="zh">这段内容可以替换成正文。</span><span class="en">Replace this text with the post body.</span></p></div></details></div></article>
-<article class="post-card" data-category="life"><div class="post-info"><div class="post-meta"><span><span class="zh">生活随想</span><span class="en">Everyday life</span></span><span><span class="zh">模板 · 待发布</span><span class="en">Template · Unpublished</span></span></div><h3><span class="zh">日常记录</span><span class="en">Everyday notes</span></h3><p><span class="zh">示例条目。以后在这里放读书、生活和其他想法。</span><span class="en">Sample entry. Reading, everyday life, and other thoughts.</span></p><details><summary><span class="zh">展开示例 →</span><span class="en">Read sample →</span></summary><div class="post-body"><p><span class="zh">这是一篇可替换的示例。可以从最近记住的一句话、一件小事，或者一次新的尝试开始。</span><span class="en">This is a replaceable sample. Begin with a sentence that stayed with you, a small event, or something new you tried.</span></p><p><span class="zh">发布前请替换示例内容。</span><span class="en">Replace this sample before publishing.</span></p></div></details></div></article>
-</div><p class="empty-note"><span class="zh">以上为框架示例，尚无正式发布文章。</span><span class="en">These are layout samples; no posts have been published yet.</span></p></div>
-<aside class="blog-aside"><div class="aside-name">sprw.</div><p><span class="zh">个人笔记。</span><span class="en">Personal notes.</span></p><a href="https://github.com/supremewen666" target="_blank" rel="noopener noreferrer">GitHub ↗</a><div class="aside-rule"></div><small><span class="zh">尚未发布正式文章。</span><span class="en">No published posts yet.</span></small><div class="aside-rule"></div><button class="text-button" type="button" data-open-about><span class="zh">← 返回个人简介</span><span class="en">← Back to profile</span></button></aside></div>
+<article class="post-card" data-category="learning" id="memory-to-os">
+  <div class="post-info"><div class="post-meta"><time datetime="2026-10-29">2026-10-29</time><span><span class="zh">研究随想</span><span class="en">Research notes</span></span></div>
+  <h3><span class="zh">从 Agent 记忆到操作系统：我接下来想研究什么</span><span class="en">From agent memory to operating systems: what I want to explore next</span></h3>
+  <p><span class="zh">这几个月对 RSI 和记忆机制的探索，让我开始追问：Agent 的长期演化，究竟需要怎样的系统支持？</span><span class="en">My recent exploration of RSI and memory mechanisms has led me to ask what systems support long-term agent evolution really needs.</span></p>
+  <details><summary><span class="zh">阅读全文</span><span class="en">Read the full note</span></summary><div class="post-body">
+    <h4><span class="zh">记忆策略之外的问题</span><span class="en">Beyond memory policies</span></h4>
+    <p><span class="zh">这几个月，我接触了不少递归式自我改进（RSI）相关工作，也看了 LLM、Agent 和 Skill 中的记忆设计。我还没有找到一个让我足够信服的答案：怎样让这些机制真正支持长期学习，而不只是改善检索或延长上下文？又怎样在减少人工介入（HITL）的同时，让改进保持可控、可检验？</span><span class="en">Over the past few months, I have explored recursive self-improvement (RSI) and memory designs for LLMs, agents, and skills. I have yet to find an answer that fully convinces me: how can these mechanisms support long-term learning rather than merely improve retrieval or extend context? How can they reduce human-in-the-loop (HITL) intervention while keeping improvement controllable and testable?</span></p>
+    <p><span class="zh">我也关心 memory scaling。相比只说“更多记忆会更好”，我更想知道：经验、存储与计算预算怎样共同影响性能？能否建立像 Chinchilla LLM scaling law 那样清晰、可检验的规律？这对我仍是一个想继续研究的问题，而不是已经得出的结论。</span><span class="en">I am also interested in memory scaling. Beyond saying that more memory should help, I want to understand how experience, storage, and compute budgets jointly affect performance. Can we establish relationships as clear and testable as the Chinchilla LLM scaling law? For me, this remains a research question rather than a settled conclusion.</span></p>
+    <h4><span class="zh">为什么开始关注 OS</span><span class="en">Why I am turning toward OS research</span></h4>
+    <p><span class="zh">想得越多，我越觉得问题可能不只在应用层的记忆策略。Agent 还需要管理执行状态、协调资源，并在不同边界之间保持正确性。我想知道，操作系统在复用、隔离、调度和持久化方面积累的设计，能否帮助我们重新理解这些问题。</span><span class="en">The more I think about it, the less likely it seems that application-level memory policies alone are the whole story. Agents also need execution-state management, resource coordination, and correctness across boundaries. I want to understand whether OS ideas about sharing, isolation, scheduling, and persistence can help us frame these problems differently.</span></p>
+    <p><span class="zh">GPU 资源管理也让我注意到跨层协调的重要性：相关能力分散在框架、运行时、驱动和设备中，普通 CPU 调度器并不能独自完成所有管理工作。我的一个研究假设是，记忆策略、后训练与 KV Cache 等运行时状态之间的协同，可能需要更明确的系统机制支撑。</span><span class="en">GPU resource management has also drawn my attention to cross-layer coordination. Responsibilities span frameworks, runtimes, drivers, and devices; a conventional CPU scheduler cannot manage everything on its own. One hypothesis I want to investigate is that coordination among memory policies, post-training, and runtime state such as the KV cache needs more explicit systems mechanisms.</span></p>
+    <h4><span class="zh">接下来想做的事</span><span class="en">What I want to work on next</span></h4>
+    <p><span class="zh">我希望有机会参与 OS 相关研究，探索 AI 执行状态如何跨内存、存储、网络与进程边界被高效且正确地管理，也关注 LLM 与内核态／用户态机制的结合，以及以系统机制为核心的 AI infrastructure 和性能优化。</span><span class="en">I hope to contribute to OS research on managing AI execution state efficiently and correctly across memory, storage, networks, and process boundaries. I am also interested in interactions between LLMs and kernel- or user-space mechanisms, and in AI infrastructure and performance optimization grounded in systems design.</span></p>
+    <p><span class="zh">这些想法还在形成中。如果你愿意讨论相关问题，或有合作、指导的机会，欢迎通过邮箱联系我。</span><span class="en">These ideas are still taking shape. If you would like to discuss them or have opportunities for collaboration or guidance, please feel free to email me.</span> <a href="mailto:wenshunyao6662021@gmail.com">wenshunyao6662021@gmail.com</a></p>
+  </div></details></div>
+</article>
+</div><p class="empty-note" id="blog-empty" hidden><span class="zh">这个分类暂时没有文章。</span><span class="en">There are no posts in this category yet.</span></p></div>
+<aside class="blog-aside"><div class="aside-name">sprw.</div><p><span class="zh">个人笔记。</span><span class="en">Personal notes.</span></p><a href="https://github.com/supremewen666" target="_blank" rel="noopener noreferrer">GitHub ↗</a><div class="aside-rule"></div><small><span class="zh">关于研究与学习的记录。</span><span class="en">Notes on research and learning.</span></small><div class="aside-rule"></div><button class="text-button" type="button" data-open-about><span class="zh">← 返回个人简介</span><span class="en">← Back to profile</span></button></aside></div>
 </div>
 <footer class="site-footer"><span>© <span id="year">2026</span> sprw</span><span><span class="zh">个人主页</span><span class="en">Personal website</span></span></footer>
 </main>
@@ -130,7 +156,7 @@ function activate(view,{updateHash=true,focus=false}={}){
 }
 function updateTitle(){document.title=state.lang==='zh'?`温顺尧 · ${state.view==='about'?'简介':'个人感想'}`:`Shunyao Wen · ${state.view==='about'?'About':'Blog'}`} 
 function setLanguage(lang){state.lang=lang==='en'?'en':'zh';document.documentElement.lang=state.lang==='zh'?'zh-CN':'en';document.querySelector('meta[name="description"]').content=state.lang==='zh'?'温顺尧的个人主页：教育、研究、项目与个人记录。':'Shunyao Wen — background, research, projects, and personal notes.';document.getElementById('zh-label').classList.toggle('chosen',state.lang==='zh');document.getElementById('en-label').classList.toggle('chosen',state.lang==='en');document.getElementById('language').setAttribute('aria-label',state.lang==='zh'?'Switch to English':'切换为中文');document.querySelector('[role="tablist"]').setAttribute('aria-label',state.lang==='zh'?'主页视图':'Homepage views');document.querySelector('.filters').setAttribute('aria-label',state.lang==='zh'?'文章分类':'Post categories');updateTitle();try{localStorage.setItem('sprw-language',state.lang)}catch{}}
-function applyFilter(category){state.filter=['all','learning','life'].includes(category)?category:'all';document.querySelectorAll('[data-filter]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.filter===state.filter)));document.querySelectorAll('[data-category]').forEach(post=>{post.hidden=state.filter!=='all'&&post.dataset.category!==state.filter})}
+function applyFilter(category){state.filter=['all','learning','life'].includes(category)?category:'all';document.querySelectorAll('[data-filter]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.filter===state.filter)));document.querySelectorAll('[data-category]').forEach(post=>{post.hidden=state.filter!=='all'&&post.dataset.category!==state.filter});document.getElementById('blog-empty').hidden=!!document.querySelector('.post-card:not([hidden])')}
 tabs.forEach((tab,index)=>{tab.addEventListener('click',()=>activate(tab.dataset.view));tab.addEventListener('keydown',event=>{let next;if(event.key==='ArrowRight'||event.key==='ArrowLeft')next=(index+1)%tabs.length;else if(event.key==='Home')next=0;else if(event.key==='End')next=tabs.length-1;else return;event.preventDefault();activate(tabs[next].dataset.view);tabs[next].focus()})});
 document.querySelector('[data-open-blog]').addEventListener('click',()=>{activate('blog',{focus:true});window.scrollTo({top:0,behavior:'auto'})});document.querySelector('[data-open-about]').addEventListener('click',()=>{activate('about',{focus:true});window.scrollTo({top:0,behavior:'auto'})});
 document.getElementById('language').addEventListener('click',()=>setLanguage(state.lang==='zh'?'en':'zh'));
